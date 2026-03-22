@@ -1,8 +1,9 @@
 import { useTheme } from "@src/theme/ThemeProvider";
 import ButtonBase, { ButtonBaseProps } from "./ButtonBase";
-import { colorVariantBy, Variant } from "./colorVariantBy";
+import { ColorVariant, colorVariantBy, Variant } from "./colorVariantBy";
 import Background from "@src/screensHomeScreen/patterns/Background/Background";
 import { ButtonSize, buttonSize } from "./ButtonSize";
+
 
 interface ButtonProps extends ButtonBaseProps {
   children: React.ReactNode;
@@ -11,13 +12,13 @@ interface ButtonProps extends ButtonBaseProps {
   variant?: Variant;
   size?: ButtonSize;
 }
-export default function Button({ styleSheet, children, fullWidth, colorVariant, variant, size }: ButtonProps) {
+export default function Button({ styleSheet, children, fullWidth, colorVariant='primary', variant='contained', size='md' }: ButtonProps) {
   const theme = useTheme();
   return (
     <ButtonBase
       styleSheet={{
         alignSelf: 'flex-start',
-        AlignItems: 'center',
+        alignItems: 'center',
         justifyContent: 'center',
         ...buttonSize[size],
         ...colorVariantBy(theme, colorVariant, variant),
