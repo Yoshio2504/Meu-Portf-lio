@@ -67,7 +67,7 @@ Feed.Header = () => {
           <Text tag="h1" variant="heading4" styleSheet={{ alignSelf: 'center' }}>
             Renato Yoshio
           </Text>
-          <Text tag="p" variant="paragraph1" styleSheet={{ alignSelf: 'center' }}>
+          <Text tag="p" variant="body2" styleSheet={{ alignSelf: 'center' }}>
             Desenvolvedor Front-end
           </Text>
           <Box styleSheet={{ 
@@ -77,7 +77,7 @@ Feed.Header = () => {
             gap: '8px', 
             marginTop: '1px' }}>
             <Icon name="email" styleSheet={{ alignSelf: 'center' }} />
-            <Text tag="p" variant="display2" styleSheet={{ alignSelf: 'center' }}>
+            <Text tag="p" variant="body2" styleSheet={{ alignSelf: 'center' }}>
               renatoyoshio@gmail.com
             </Text>
           </Box>
@@ -92,7 +92,7 @@ Feed.Header = () => {
           }}
         >
           <Link href="https://www.linkedin.com/in/renato-yoshio-b48973300/" styleSheet={{ alignSelf: 'start' }}>
-            <Icon name="youtube" />
+            <Icon name="linkedin" />
           </Link>
           <Link href="https://twitter.com/renatoyoshioo" styleSheet={{ alignSelf: 'start' }}>
             <Icon name="twitter" />
@@ -105,10 +105,7 @@ Feed.Header = () => {
           </Link>
         </Box> 
         
-          <Box
-            styleSheet={{
-            }}
-          >
+          <Box>
             <Box  styleSheet={{flex:1, justifyContent: 'space-between', gap: '16px', flexDirection: 'column', display: {xs: 'none', md: 'flex'}, padding: '16px'  }}> 
               <Button fullWidth colorVariant="primary" size="xl">
                 Meu Feed
