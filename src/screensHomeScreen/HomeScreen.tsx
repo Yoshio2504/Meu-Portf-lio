@@ -14,7 +14,7 @@ export default function HomeScreen() {
     <Box
       tag="main"
       styleSheet={{
-        backgroundColor: theme.colors.primary.x100,
+        backgroundColor: theme.colors.primary.x200,
         flex: 1,
         minHeight: '100vh',      
         display: 'flex',           
