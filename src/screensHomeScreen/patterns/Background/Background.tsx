@@ -10,9 +10,9 @@ export default function Background() {
       tag="section"
       styleSheet={{
         backgroundColor: theme.colors.primary.x200,
-        backgroundImage: `url(${imageUrl})`,
+       backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, ${theme.colors.primary.x200} 100%), url(${imageUrl})`,
         width: '100%',
-        height: '120vh',
+        minHeight: '120vh',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         marginBottom: '-50vh'

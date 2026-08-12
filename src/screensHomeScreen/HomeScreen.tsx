@@ -20,6 +20,11 @@ export default function HomeScreen() {
         display: 'flex',           
         flexDirection: 'column',   
         justifyContent: 'space-between', 
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
       }}
     >
       <Box 
@@ -37,8 +42,8 @@ export default function HomeScreen() {
           <Feed.updates/>
           <Feed.Posts /> 
         </Feed>
-        <Footer/>
       </Box>
+    <Footer/>
     </Box>
   );
 }

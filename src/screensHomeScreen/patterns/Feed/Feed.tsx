@@ -49,9 +49,9 @@ Feed.Header = () => {
       <Box
         styleSheet={{
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: { xs: 'column', md: 'row' },
           justifyContent: 'space-between',
-          gap: '16px',
+          gap: '24px',
           alignItems:'center',
           marginBottom: '16px',
           marginTop: '-10px',
@@ -80,6 +80,14 @@ Feed.Header = () => {
           <Text tag="p" variant="body2" styleSheet={{ alignSelf: 'center' }}>
             Desenvolvedor Front-end
           </Text>
+        </Box>
+        <Box styleSheet={{ 
+          display: 'flex',
+          flexDirection: 'column', 
+          gap: '8px',
+          alignItems:'center',
+          }}>
+          
           <Box
             styleSheet={{
               flexDirection: 'row', 
@@ -110,16 +118,23 @@ Feed.Header = () => {
             flexDirection: 'row', 
             gap: '8px', 
             marginTop: '1px' }}>
-            <Icon name="email" styleSheet={{ alignSelf: 'center' }} />
-            <Text tag="p" variant="body2" styleSheet={{ alignSelf: 'center' }}>
-              renatoyoshio@gmail.com
-            </Text>
+              <Icon name="email" styleSheet={{ alignSelf: 'center' }} />
+              <Text tag="p" variant="body2" styleSheet={{ alignSelf: 'center' }}>
+                renatoyoshio@gmail.com
+              </Text>
           </Box>
           
 
         </Box>
           <Box>
-            <Box  styleSheet={{flex:1, justifyContent: 'space-between', gap: '16px', flexDirection: 'column', display: {xs: 'none', md: 'flex'}, padding: '16px'  }}> 
+            <Box  styleSheet={{
+              flex:1, 
+              justifyContent: 'space-between', 
+              gap: '12px', 
+              flexDirection: 'column', 
+              display: {xs: 'none', md: 'flex'}, 
+              padding: '16px',
+              minWidth: '160px', }}> 
               <Button fullWidth colorVariant="primary" size="xl">
                 Meu Feed
               </Button>
