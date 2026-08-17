@@ -35,6 +35,8 @@ export default function Contato() {
             alignItems: 'center',
             flexDirection: 'column',
             flex: 1,
+            paddingHorizontal: '16px',
+            paddingVertical: '16px',
           }}
         >
           <Background />

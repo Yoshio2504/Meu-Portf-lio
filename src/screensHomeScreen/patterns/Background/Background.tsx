@@ -13,7 +13,7 @@ export default function Background() {
        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, ${theme.colors.primary.x200} 100%), url(${imageUrl})`,
         width: '100%',
         minHeight: '120vh',
-        backgroundPosition: 'center',
+        backgroundPosition: 'top-center',
         backgroundSize: 'cover',
         marginBottom: '-50vh'
       }}
