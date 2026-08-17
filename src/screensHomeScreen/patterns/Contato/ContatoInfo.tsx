@@ -56,17 +56,26 @@ ContatoInfo.Header = function ContatoHeader() {
 ContatoInfo.Text = function ContatoText() {
   return (
     <Box styleSheet={{ paddingHorizontal: '32px', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-        <Text tag="h2" variant="body1" styleSheet={{ color: '#000000' }} >
+        <Box styleSheet={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px' }}>
+          <Icon name="email" />
+          <Text tag="h2" variant="body1" styleSheet={{ color: '#000000' }} >
             e-mail: renatoolyntho@gmail.com
-        </Text>  
-        <Link href="https://www.linkedin.com/in/renato-yoshio-b48973300/">
+          </Text>
+        </Box>
+        <Box styleSheet={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px' }}>
+          <Icon name="linkedin" />
+          <Link href="https://www.linkedin.com/in/renato-yoshio-b48973300/">
              <Text tag="h2" variant="body1" styleSheet={{ color: '#000000' }} >
-                Linkedin: https://www.linkedin.com/in/renato-olyntho/
-            </Text>
-        </Link>
-        <Text tag="h2" variant="body1" styleSheet={{ color: '#000000' }} >
+                LinkedIn: renato-olyntho
+              </Text>
+            </Link>
+        </Box>
+        <Box styleSheet={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px' }}>
+          <Icon name="celular"/> 
+          <Text tag="h2" variant="body1" styleSheet={{ color: '#000000' }} >
             Celular: (11) 9 98800-9028
-        </Text>
+          </Text>
+        </Box>    
     </Box>
   );
 };

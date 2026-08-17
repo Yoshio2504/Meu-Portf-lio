@@ -5,3 +5,4 @@ export {default as github} from './github';
 export {default as twitter} from './twitter';
 export {default as menu} from './menu';
 export {default as email} from './email';
+export {default as celular} from './celular';
