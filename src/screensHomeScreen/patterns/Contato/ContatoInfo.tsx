@@ -27,6 +27,7 @@ export default function ContatoInfo({ children }: AboutMeProps) {
         paddingHorizontal: '32px',
         display: 'flex',
         gap: '16px',
+        alignItems: 'flex-start',
       }}
     >
       {children}
