@@ -45,7 +45,7 @@ ContatoInfo.Header = function ContatoHeader() {
         marginBottom: '24px',
       }}
     >
-        <Text tag="h1" variant="heading1">
+        <Text tag="h1" variant="heading2">
             Entre em contato comigo:
         </Text>
     </Box>    
@@ -65,7 +65,7 @@ ContatoInfo.Text = function ContatoText() {
         <Box styleSheet={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px' }}>
           <Icon name="linkedin" />
           <Link href="https://www.linkedin.com/in/renato-yoshio-b48973300/">
-             <Text tag="h2" variant="body1" styleSheet={{ color: '#000000' }} >
+             <Text tag="h2" variant="body1" styleSheet={{ color: '#000000', wordBreak: 'break-word', overflowWrap: 'anywhere', maxWidth: '100%' }} >
                 LinkedIn: renato-olyntho
               </Text>
             </Link>
