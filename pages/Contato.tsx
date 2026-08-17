@@ -27,6 +27,7 @@ export default function Contato() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
+          margin: '0',
         }}
       >
         <Box
@@ -35,14 +36,12 @@ export default function Contato() {
             alignItems: 'center',
             flexDirection: 'column',
             flex: 1,
-            paddingHorizontal: '16px',
-            paddingVertical: '16px',
           }}
         >
           <Background />
           <ContatoInfo>
-                    <ContatoInfo.Header />
-                    <ContatoInfo.Text />
+            <ContatoInfo.Header />
+            <ContatoInfo.Text />
           </ContatoInfo>
         </Box>
       <Footer/>   
