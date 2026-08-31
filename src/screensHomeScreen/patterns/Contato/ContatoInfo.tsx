@@ -18,8 +18,10 @@ export default function ContatoInfo({ children }: AboutMeProps) {
       styleSheet={{
         backgroundColor: theme.colors.warning.x100,
         width: '90%',
+        maxWidth: '450px',
         borderRadius: '50px',
-        padding: '16px',
+        padding: '24px',
+        boxSizing: 'border-box',
         marginTop: '-50vh',
         marginBottom: '10vh',
         paddingBottom: '32px',
@@ -44,6 +46,7 @@ ContatoInfo.Header = function ContatoHeader() {
         color: theme.colors.neutral.x900,
         borderBottom: `1px solid ${theme.colors.neutral.x900}`,
         marginBottom: '24px',
+        width: '100%',
       }}
     >
         <Text tag="h1" variant="heading2">

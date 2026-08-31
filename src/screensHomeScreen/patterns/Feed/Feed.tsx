@@ -111,20 +111,6 @@ Feed.Header = () => {
               <Icon name="github"/>
             </Link>
           </Box> 
-          <Box styleSheet={{ 
-            display: 'flex',
-            justifyContent: 'center', 
-            alignItems: 'center', 
-            flexDirection: 'row', 
-            gap: '8px', 
-            marginTop: '1px' }}>
-              <Icon name="email" styleSheet={{ alignSelf: 'center' }} />
-              <Text tag="p" variant="body2" styleSheet={{ alignSelf: 'center' }}>
-                renatoyoshio@gmail.com
-              </Text>
-          </Box>
-          
-
         </Box>
           <Box>
             <Box  styleSheet={{
