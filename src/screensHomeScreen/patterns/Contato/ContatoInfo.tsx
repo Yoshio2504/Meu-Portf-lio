@@ -78,7 +78,7 @@ ContatoInfo.Text = function ContatoText() {
       <Box styleSheet={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', width: '100%' }}>
         <Icon name="email" />
         <Text tag="p" variant="body1" styleSheet={safeTextStyle}>
-          e-mail: renatoolyntho@gmail.com
+          renatoolyntho@gmail.com
         </Text>
       </Box>
 
@@ -87,7 +87,7 @@ ContatoInfo.Text = function ContatoText() {
         <Icon name="linkedin" />
         <Link href="https://www.linkedin.com/in/renato-yoshio-b48973300/" style={{ flex: 1, display: 'flex' }}>
           <Text tag="p" variant="body1" styleSheet={safeTextStyle}>
-            LinkedIn: renato-olyntho
+            renato-olyntho
           </Text>
         </Link>
       </Box>
@@ -96,7 +96,7 @@ ContatoInfo.Text = function ContatoText() {
       <Box styleSheet={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', width: '100%' }}>
         <Icon name="celular"/> 
         <Text tag="p" variant="body1" styleSheet={safeTextStyle}>
-          Celular: (11) 9 98800-9028
+          (11) 9 98800-9028
         </Text>
       </Box>    
     </Box>
