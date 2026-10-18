@@ -20,7 +20,7 @@ export default function AboutMe({ children }: AboutMeProps) {
         width: '90%',
         borderRadius: '50px',
         padding: '16px',
-        marginTop: '-50vh',
+        marginTop: '20vh',
         marginBottom: '10vh',
         paddingBottom: '32px',
         paddingTop: '32px',

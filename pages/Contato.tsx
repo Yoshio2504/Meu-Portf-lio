@@ -10,24 +10,22 @@ import Footer from "@src/screensHomeScreen/patterns/Footer/Footer";
 import ContatoInfo from "@src/screensHomeScreen/patterns/Contato/ContatoInfo";
 
 export default function Contato() {
-  const theme = useTheme();
-
   return (
     <>
-      <Box>
-        <Menu />
-      </Box>
-
+      <Background />
       <Box
         tag="main"
         styleSheet={{
-          backgroundColor: theme.colors.primary.x100,
+          backgroundColor: 'transparent',
           flex: 1,
           minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
           margin: '0',
+          width: '100%',
+          position: 'relative',
+          zIndex: 1,
         }}
       >
         <Box
@@ -36,15 +34,19 @@ export default function Contato() {
             alignItems: 'center',
             flexDirection: 'column',
             flex: 1,
+            position: 'relative',
+            zIndex: 1,
+            paddingTop: '80px',
+            paddingBottom: '40px',
           }}
         >
-          <Background />
+          <Menu />
           <ContatoInfo>
             <ContatoInfo.Header />
             <ContatoInfo.Text />
           </ContatoInfo>
         </Box>
-      <Footer/>   
+        <Footer />
       </Box>
     </>
   );

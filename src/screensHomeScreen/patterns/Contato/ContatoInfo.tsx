@@ -22,7 +22,7 @@ export default function ContatoInfo({ children }: AboutMeProps) {
         borderRadius: '32px', // Ajustado para um raio mais proporcional em telas pequenas
         padding: '24px',
         boxSizing: 'border-box',
-        marginTop: '-50vh',
+        marginTop: '20vh',
         marginBottom: '10vh',
         display: 'flex',
         flexDirection: 'column', // Garante o empilhamento vertical do Header e do Text

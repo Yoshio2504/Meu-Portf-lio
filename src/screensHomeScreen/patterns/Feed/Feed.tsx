@@ -19,15 +19,17 @@ export default function Feed({ children }: FeedProps) {
       styleSheet={{
         backgroundColor: theme.colors.warning.x100,
         width: '90%',
+        maxWidth: '1100px',
         borderRadius: '50px',
-        padding: '16px',  
-        marginTop: '-50vh',
-        marginBottom:'10vh',
+        padding: '16px',
+        marginTop: '24px',
+        marginBottom: '10vh',
         paddingBottom: '32px',
         paddingTop: '32px',
         paddingHorizontal: '32px',
         display: 'flex',
-        gap: '16px',  
+        gap: '16px',
+        flexDirection: 'column',
       }}
     >
       {children}

@@ -8,38 +8,44 @@ import Footer from "./patterns/Footer/Footer";
 import Menu from "./patterns/Menu/Menu";
 
 export default function HomeScreen() {
-  const theme = useTheme();
-
   return (
-    <Box
-      tag="main"
-      styleSheet={{
-        backgroundColor: theme.colors.primary.x200,
-        flex: 1,
-        minHeight: '100vh',      
-        display: 'flex',           
-        flexDirection: 'column',   
-        justifyContent: 'space-between', 
-        width: '100%',
-      }}
-    >
-      <Box 
-        styleSheet={{ 
-          width: '100%', 
-          alignItems: 'center', 
+    <>
+      <Background />
+      <Box
+        tag="main"
+        styleSheet={{
+          backgroundColor: 'transparent',
+          flex: 1,
+          minHeight: '100vh',
+          display: 'flex',
           flexDirection: 'column',
-          flex: 1 
+          justifyContent: 'space-between',
+          width: '100%',
+          position: 'relative',
+          zIndex: 1,
         }}
       >
-        <Background />
-        <Menu />
-        <Feed>
-          <Feed.Header />
-          <Feed.updates/>
-          <Feed.Posts /> 
-        </Feed>
+        <Box 
+          styleSheet={{ 
+            width: '100%', 
+            alignItems: 'center', 
+            flexDirection: 'column',
+            flex: 1,
+            position: 'relative',
+            zIndex: 1,
+            paddingTop: '80px',
+            paddingBottom: '40px',
+          }}
+        >
+          <Menu />
+          <Feed>
+            <Feed.Header />
+            <Feed.updates/>
+            <Feed.Posts /> 
+          </Feed>
+        </Box>
+      <Footer/>
       </Box>
-    <Footer/>
-    </Box>
+    </>
   );
 }

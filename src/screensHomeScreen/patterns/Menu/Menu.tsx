@@ -14,17 +14,18 @@ export default function Menu() {
   return (
     <Box
     styleSheet={{
-      position: 'absolute',
+      position: 'sticky',
       top: '0',
       left: '0',
       right: '0',
-      padding: '16px',
+      padding: '16px 24px',
       zIndex: 1000,
       flexDirection: 'row',
       alignItems: 'flex-start',
       justifyContent: 'space-between',
-      marginTop: '10px',
-
+      marginTop: '0px',
+      width: '100%',
+      maxWidth: '1200px',
     }}>
       <Text variant="heading2"
       styleSheet={{

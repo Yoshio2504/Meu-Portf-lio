@@ -10,23 +10,21 @@ import Footer from "@src/screensHomeScreen/patterns/Footer/Footer";
 
 
 export default function AboutScreen() {
-  const theme = useTheme();
-
   return (
     <>
-      <Box>
-        <Menu />
-      </Box>
-
+      <Background />
       <Box
         tag="main"
         styleSheet={{
-          backgroundColor: theme.colors.primary.x100,
+          backgroundColor: 'transparent',
           flex: 1,
           minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
+          width: '100%',
+          position: 'relative',
+          zIndex: 1,
         }}
       >
         <Box
@@ -35,15 +33,19 @@ export default function AboutScreen() {
             alignItems: 'center',
             flexDirection: 'column',
             flex: 1,
+            position: 'relative',
+            zIndex: 1,
+            paddingTop: '80px',
+            paddingBottom: '40px',
           }}
         >
-          <Background />
+          <Menu />
           <AboutMe>
-                    <AboutMe.Header />
-                    <AboutMe.Text />
+            <AboutMe.Header />
+            <AboutMe.Text />
           </AboutMe>
         </Box>
-      <Footer/>   
+        <Footer />
       </Box>
     </>
   );
